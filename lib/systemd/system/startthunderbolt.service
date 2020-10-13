@@ -1,0 +1,11 @@
+[Unit]
+Description=Starts thunderbolt
+Wants=network-online.target #A bit of delaying doesn't hurt, remove it for a slightly faster startup
+After=network-online.target
+
+[Service]
+ExecStart=/home/USER/Scripts/Thunderbolt.sh #Replace USER with your username, and the path with the path you used for the script
+User=root
+
+[Install]
+WantedBy=multi-user.target
