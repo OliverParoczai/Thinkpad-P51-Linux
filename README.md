@@ -17,3 +17,6 @@ I will upload the scripts according to the directories I have them installed in.
     2. Use the following command to set the right permissions: ```sudo chmod 644 /lib/systemd/system/startthunderbolt.service```
     3. Use the following command to start the service: ```sudo systemctl start startthunderbolt.service```
     4. Restart the laptop and run ```sudo systemctl status startthunderbolt.service``` to check if it works.
+    
+    
+    **Reminder: Thunderbolt being enabled may result in a bit lower battery life even if it isn't used, that's how force power works.**
